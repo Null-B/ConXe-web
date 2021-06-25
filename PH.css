@@ -1,183 +1,179 @@
-html{
-  height: 150%;
+html {
+  height: 100%;
 }
 
 body > #bg {
   height: 100%;
   width: 100%;
-  background: rgb(255,175,0);
+  background: rgb(255, 175, 0);
   background: linear-gradient(
-    48deg, 
-    rgba(255, 219, 140, 0.24) 0%, 
+    48deg,
+    rgba(255, 219, 140, 0.24) 0%,
     rgba(160, 182, 255, 0.192) 100%
   );
-
 
   clip-path: polygon(32% 0, 100% 0, 100% 33%, 59% 100%, 0 100%, 0 59%);
   position: absolute;
   z-index: -1;
-  animation: fadeIn linear 2s;
-
-
 }
 
-
 body {
-  
-
   background: linear-gradient(
-    48deg, 
-    rgba(255,79,79,0.4682247899159664) 0%,  
-    rgba(88,97,255,1) 100%
-    );
+    48deg,
+    rgba(255, 79, 79, 0.4682247899159664) 0%,
+    rgba(88, 97, 255, 1) 100%
+  );
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 50;
-    margin: 0;
-    animation: fadeIn linear 2s;
-    
-  }
-
-
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+  margin: 0;
+}
 
 /* 
   this for the taskbar */
-  .topnav {
-    overflow: hidden;
-    background-color: rgba(51, 51, 51, 0.137);
-    display: flex;
-    position: sticky; 
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: flex;
-    position: sticky; 
-  }
-  
-  .topnav a:hover {
-    background-color:#99aab5;
-    color: black;
-    display: flex;
-    position: sticky; 
-  }
-  
-  .topnav a.active {
-    background-color: #0084ff86;
-    color: white;
-    display: flex;
-    position: sticky; 
-  }
+.topnav {
+  overflow: hidden;
+  background-color: rgb(74, 105, 97);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 105, 97, 0.15) 0%,
+    rgba(255, 255, 255, 0.219) 100%
+  );
+  display: flex;
+  position: sticky;
+}
 
-  #enter {
-    animation-name: movein;
-    animation-duration: 4s;
-    animation-delay: 2s;
-  }
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: flex;
+  position: sticky;
+}
 
-  @keyframes movein {
-      
-  }
+.topnav a:hover {
+  background-color: #b3b3b328;
+  color: rgb(250, 193, 8);
+  font-size: 19px;
+  display: flex;
+  position: sticky;
+  transition: color 1s, background-color 1.5s, font-size 1s;
+}
 
-  #fistline {
-    text-align: center;
-    font-size: 80px;
-    position: relative;
-    top: 0px;
-    text-shadow: -1px -1px 0 #000,
-                1px -1px 0 #000,
-                -1px 1px 0 #000,
-                1px 1px 0 #000;   
-    animation: fadeIn linear 2s;
-      letter-spacing: 5px;
-      animation: colorRotate 16s linear 0s infinite;
-    }
-    
-  @keyframes colorRotate {
-    from {
-      color: #ff6666;
-    }
-    50% {
-      color: #ffc400;
-    }
-    100% {
-      color: #ff3d3d;
-    }
+.topnav a:not(:hover) {
+  color: #f2f2f2;
+  font-size: 17px;
+  display: flex;
+  position: sticky;
+  transition: color 1.5s, background-color 1.5s, font-size 0.5s;
+}
+
+.topnav a.active {
+  background-color: #0084ff86;
+  color: white;
+  display: flex;
+  position: sticky;
+  transition: color 2s, background-color 2s;
+}
+
+
+#fistline {
+  text-align: center;
+  position: relative;
+  font-size: 80px;
+  top: 0px;
+  text-shadow: 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  letter-spacing: 5px;
+  animation: colorRotate 16s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #ff3d3d;
+  }
+  50% {
+    color: #ffc400;
+  }
+  100% {
+    color: #ff3d3d;
+  }
+}
+
+
+#fistline:hover {
+  font-size: 85px;
+  transition: font-size 1s;
+}
+
+#fistline:not(:hover){
+  font-size: 80px;
+  transition: font-size 1.5s;
+}
+
+#name {
+  font-size: 55px;
+  position: relative;
+  text-align: center;
+  left: 25px;
+  text-shadow: 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  letter-spacing: 5px;
+  animation: colorRotate 16s linear 0s infinite;
+}
+#name:hover {
+  font-size: 85px;
+  transition: font-size 1s;
+}
+
+#name:not(:hover){
+  font-size: 80px;
+  transition: font-size 1.5s;
+}
+
+#secondline {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  top: -80px;
+  left: 100px;
 }
 
 @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-  #name {
-    font-size: 55px;
-    position: relative;
-    text-align: center;
-    left: 25px;
-    text-shadow: -1px -1px 0 #000,
-                  1px -1px 0 #000,
-                  -1px 1px 0 #000,
-                  1px 1px 0 #000;
-    animation: fadeIn linear 2s;
-    animation: fadeIn linear 2s;
-    letter-spacing: 5px;
-    animation: colorRotate 16s linear 0s infinite;
-  }
-  
-
-  
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-
-  #secondline {
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    top: -80px;
-    left: 100px;  
-    animation: fadeIn linear 2s;
+#fistp {
+  text-align: center;
+  font-weight: 50;
 }
 
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+#kemal {
+  font-weight: 500;
+  font-style: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  display: inline;
+  letter-spacing: 5px;
+  animation: colorRotate 16s linear 0s infinite;
 }
 
-  #fistp {
-    text-align: center;
-    font-weight: 50;
-  }
-
-  #kemal{
-      font-weight: 500;
-      font-style: bold;
-      text-shadow: -1px -1px 0 #000,
-                    1px -1px 0 #000,
-                    -1px 1px 0 #000,
-                    1px 1px 0 #000;
-      display:inline;
-      animation: fadeIn linear 2s;
-      animation: fadeIn linear 2s;
-      letter-spacing: 5px;
-      animation: colorRotate 16s linear 0s infinite;
-    }
-
-  
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-
-  /* width */
+/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -189,19 +185,17 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
-
-#side_left
-{
+#side_left {
   position: absolute;
   top: 0px;
   left: 0px;
 }
 
-.down{
-  position:fixed;
-  bottom:0px;
-  right:50%;
+.down {
+  position: fixed;
+  bottom: 0px;
+  right: 50%;
 }
