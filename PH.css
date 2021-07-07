@@ -36,9 +36,9 @@ body {
 .topnav {
   overflow: hidden;
   background: linear-gradient(
-    90deg,
-    rgba(182, 182, 182, 0.432) 0%,
-    rgba(92, 92, 92, 0.493) 100%
+    48deg,
+    rgba(255, 79, 79, 0.103) 0%,
+    rgba(88, 97, 255, 1) 100%
   );
   display: flex;
   position: sticky;
@@ -50,15 +50,26 @@ body {
   0% {background-position: 0%}
   100% {background-position: 100%}
 }
+
 .topnav a {
-  float: left;
   color: #f2f2f2;
-  text-align: center;
   padding: 13px 15px;
   text-decoration: none;
   font-size: 17px;
   display: flex;
   position: sticky;
+}
+
+.topnav a.yes {
+  float: right;
+}
+
+.topnav a.active {
+  background-color: #0084ff86;
+  color: white;
+  display: flex;
+  position: sticky;
+  transition: color 2s, background-color 2s;
 }
 
 .topnav a:hover {
@@ -78,13 +89,7 @@ body {
   transition: color 1.5s, background-color 1.5s, font-size 0.5s;
 }
 
-.topnav a.active {
-  background-color: #0084ff86;
-  color: white;
-  display: flex;
-  position: sticky;
-  transition: color 2s, background-color 2s;
-}
+
 
 
 #fistline {
@@ -121,7 +126,7 @@ body {
 
 #fistline:not(:hover){
   font-size: 80px;
-  transition: font-size 1.5s;
+  transition: font-size .5s;
 }
 
 #name {
@@ -144,7 +149,7 @@ body {
 
 #name:not(:hover){
   font-size: 80px;
-  transition: font-size 1.5s;
+  transition: font-size .5s;
 }
 
 #secondline {
