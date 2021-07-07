@@ -49,8 +49,6 @@ build/Release
 node_modules/
 jspm_packages/
 
-
-
 # Optional eslint cache
 .eslintcache
 
@@ -91,8 +89,6 @@ jspm_packages/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-
 # yes mine and some more stuff
-
 to_do.txt
 .vscode
