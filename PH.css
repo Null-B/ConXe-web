@@ -25,61 +25,93 @@ body {
 /* 
   this for the taskbar */
 
-.topnav {
-    overflow: hidden;
-    background: linear-gradient( 48deg, rgba(255, 79, 79, 0.103) 0%, rgba(88, 97, 255, 1) 100%);
-    display: flex;
-    position: sticky;
-    background-size: 600% 100%;
-    animation: gradient 16s linear infinite;
-    animation-direction: alternate;
+nav {
+    margin: 10px auto 0;
+    position: relative;
+    width: 470px;
+    height: 45px;
+    background: rgba(0, 51, 255, 0.452);
+    background: linear-gradient( 65deg, rgba(0, 51, 255, 0.253) 0%, rgba(255, 147, 65, 0.432) 100%);
+    border-radius: 10px;
+    font-size: 0;
+    border: 0px solid rgba(255, 0, 0, 0);
+    transition: border 1s;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0%
-    }
-    100% {
-        background-position: 100%
-    }
-}
-
-.topnav a {
-    color: #f2f2f2;
-    padding: 13px 15px;
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 13px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
     text-decoration: none;
-    font-size: 17px;
-    display: flex;
-    position: sticky;
-}
-
-.topnav a.yes {
-    float: right;
-}
-
-.topnav a.active {
-    background-color: #0084ff86;
+    text-transform: uppercase;
+    text-align: center;
     color: white;
-    display: flex;
-    position: sticky;
-    transition: color 2s, background-color 2s;
+    cursor: pointer;
 }
 
-.topnav a:hover {
-    background-color: #b3b3b328;
-    color: rgb(250, 193, 8);
-    font-size: 19px;
-    display: flex;
-    position: sticky;
-    transition: color 1s, background-color 1.5s, font-size 1s;
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
 }
 
-.topnav a:not(:hover) {
-    color: #f2f2f2;
-    font-size: 17px;
-    display: flex;
-    position: sticky;
-    transition: color 1.5s, background-color 1.5s, font-size 0.5s;
+a:nth-child(1) {
+    width: 100px;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+
+nav:hover {
+    border: 2.5px solid rgba(0, 0, 0, 0.658);
+    transition: border 1s;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #7bff0081;
+}
+
+nav .start-code,
+a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #e7643c7e;
+}
+
+nav .start-updates,
+a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #2995dd88;
+}
+
+nav .start-developers,
+a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #ff99006e;
 }
 
 #fistline {
@@ -152,6 +184,7 @@ body {
 }
 
 #fistp {
+    color: #fff;
     text-align: center;
     font-weight: 50;
 }
@@ -196,4 +229,5 @@ body {
     position: fixed;
     bottom: 0px;
     right: 50%;
+    color: #fff;
 }
