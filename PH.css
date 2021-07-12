@@ -26,21 +26,22 @@ body {
   this for the taskbar */
 
 nav {
-    margin: 10px auto 0;
+    margin: 1px auto 0;
     position: relative;
     width: 470px;
     height: 45px;
     background: rgba(0, 51, 255, 0.452);
     background: linear-gradient( 65deg, rgba(0, 51, 255, 0.253) 0%, rgba(255, 147, 65, 0.432) 100%);
-    border-radius: 10px;
+    border-radius: 500px;
     font-size: 0;
-    border: 0px solid rgba(255, 0, 0, 0);
-    transition: border 1s;
+    border: 2.5px solid rgba(255, 0, 0, 0);
+    transition: border 0.5s;
 }
 
 nav a {
     line-height: 50px;
     height: 100%;
+    border-radius: 500px;
     font-size: 13px;
     display: inline-block;
     position: relative;
@@ -82,14 +83,15 @@ a:nth-child(5) {
 }
 
 nav:hover {
-    border: 2.5px solid rgba(0, 0, 0, 0.658);
-    transition: border 1s;
+    border: 2.5px solid rgba(0, 105, 175, 0.658);
+    transition: border 0.5s;
 }
 
 nav .start-home,
 a:nth-child(1):hover~.animation {
     width: 100px;
     left: 0;
+    border-radius: 500px;
     background-color: #7bff0081;
 }
 
@@ -97,6 +99,7 @@ nav .start-code,
 a:nth-child(2):hover~.animation {
     width: 110px;
     left: 100px;
+    border-radius: 500px;
     background-color: #e7643c7e;
 }
 
@@ -104,6 +107,7 @@ nav .start-updates,
 a:nth-child(3):hover~.animation {
     width: 100px;
     left: 210px;
+    border-radius: 500px;
     background-color: #2995dd88;
 }
 
@@ -111,6 +115,7 @@ nav .start-developers,
 a:nth-child(4):hover~.animation {
     width: 160px;
     left: 310px;
+    border-radius: 500px;
     background-color: #ff99006e;
 }
 
