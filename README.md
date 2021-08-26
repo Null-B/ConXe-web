@@ -18,13 +18,13 @@
 <br>
 
 # LIcense
-### This Project uses the [Apache License 2.0](https://github.com/Null-B/Website-For-Your_mom_bot/blob/main/LICENSE.md)
+#### This Project uses the [Apache License 2.0](https://github.com/Null-B/Website-For-Your_mom_bot/blob/main/LICENSE.md)
 #### Apache License 2.0 LICENSE - "A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code."
 
-<br><br>
+<br>
 
 # What is the project about?
-### This is the main [**Website**](https://websever-for-replit.kemalsptkemal.repl.co/) for [**"Your_mom_bot"**](https://github.com/Null-B/Your_mom_bot)
-### It is a very specific Wesite. But if you want to look through the code. feal free to use it in your privet and pubclic projects, but do not forget the License and copyright notice that is found in the  [Apache License 2.0](https://github.com/Null-B/Website-For-Your_mom_bot/blob/main/LICENSE.md)
+#### This is the main [**Website**](https://websever-for-replit.kemalsptkemal.repl.co/) for [**"Your_mom_bot"**](https://github.com/Null-B/Your_mom_bot)
+#### It is a very specific Wesite. But if you want to look through the code. feal free to use it in your privet and pubclic projects, but do not forget the License and copyright notice that is found in the  [Apache License 2.0](https://github.com/Null-B/Website-For-Your_mom_bot/blob/main/LICENSE.md)
 
 ## thank you for reading the document and dont forget to follow [me](https://github.com/Null-B)
